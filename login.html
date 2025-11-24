@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login — Dexner</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Dexner</h1>
+    <nav>
+      <a href="index.html">Domov</a>
+      <a href="register.html">Register</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h2>Prihlásenie</h2>
+
+    <form id="login-form">
+      <input type="email" name="email" placeholder="E‑mail" required />
+      <input type="password" name="password" placeholder="Heslo" required />
+      <button type="submit">Prihlásiť</button>
+    </form>
+    <div id="status-login" class="status"></div>
+
+    <div style="margin-top:12px;">
+      <button id="logout-btn" class="small">Odhlásiť</button>
+    </div>
+  </main>
+
+  <footer>
+    <p id="user-status">Kontrola stavu používateľa...</p>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Register — Dexner</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Dexner</h1>
+    <nav>
+      <a href="index.html">Domov</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h2>Registrácia</h2>
+
+    <section>
+      <h3>Rýchla registrácia (bez e‑mailu)</h3>
+      <button id="anon-register" class="small">Registrovať anonymne</button>
+      <div id="status-register" class="status"></div>
+    </section>
+
+    <section style="margin-top:16px;">
+      <h3>Registrovať s e‑mailom</h3>
+      <form id="register-form">
+        <input type="email" name="email" placeholder="E‑mail" required />
+        <input type="password" name="password" placeholder="Heslo" required />
+        <button type="submit">Registrovať</button>
+      </form>
+      <div class="status">Ak nechceš e‑mail teraz, použi anonymnú registráciu a neskôr si pridáš e‑mail v profile.</div>
+    </section>
+
+    <section style="margin-top:16px;">
+      <h3>Pridať e‑mail k anonymnému účtu</h3>
+      <form id="link-form">
+        <input type="email" name="email" placeholder="E‑mail" required />
+        <input type="password" name="password" placeholder="Heslo" required />
+        <button type="submit">Pridať e‑mail</button>
+      </form>
+      <div id="status-link" class="status"></div>
+      <div style="margin-top:6px">Tento krok vyžaduje, aby si bol prihlásený anonymne (stlačením "Registrovať anonymne").</div>
+    </section>
+  </main>
+
+  <footer>
+    <p id="user-status">Kontrola stavu používateľa...</p>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
